@@ -956,4 +956,4 @@ f.close()
 
 with open('myfile.txt', 'r') as f:  # Using 'with' statement to automatically close the file
     text = f.read()  # Reading the entire file content
-    print(text)  # Printing the content of the file
+    print(text)  # Printing the content of the file.
