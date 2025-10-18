@@ -946,25 +946,23 @@
 # # print(y) # This will raise an error since y is a local variable and not accessible outside the function
 
 # ~File IO~
-
-# gi# Reading a File
+# #Reading a File
 # f = open('myfile 1.txt', 'r')
 # # print(f)
 # text = f.read()
 # print(text)
 # f.close()
-
+# 
 # # Writing a File
 # f = open('myfile 1.txt', 'w')
 # f.write("Hello, this is a test file.")
 # f.close()   # Closing the file after writing
-
+# 
 # with open('myfile 1.txt','a') as f:
 #     f.write("\nThis line is appended to the file.")
 
 # ~Read(), Readline() and other method~
-
-# # READLINE METHOD
+# #READLINE METHOD
 # f = open('myfile 2.txt', 'r')
 # i = 0
 # while True:
@@ -979,9 +977,9 @@
 #     print(f"marks of student {i} is English is: {m2}")
 #     print(f"marks of student {i} is Science is: {m3}")
 #     print(line)
-
+# 
 # # and
-
+# 
 # f = open('myfile 2.txt', 'r')
 # i = 0
 # while True:
@@ -996,10 +994,48 @@
 #     print(f"marks of student {i} is English is: {m2*2}")
 #     print(f"marks of student {i} is Science is: {m3*2}")
 #     print(line)
-
+# 
 # # WRITELINE METHOD
 # f = open('myfile 3.txt', 'w')   # Opening file in write mode
 # lines = ["This is line 1\n", "This is line 2\n", "This is line 3\n"]
 # f.writelines(lines)
 # f.close()
 
+# ~Seek(), Tell() and Other Functions~
+# with open('file 1.txt', 'r') as f:
+#     print(type(f))          # Printing the type of file object  
+#     # Moce the cursor to the 10th byte in the file
+#     f.seek(10) 
+
+#     # Read the next 5 bytes
+#     print( f.tell())        # Printing the current position of the cursor   
+#     data = f.read(5)
+#     print(data)             # Printing the read data
+# 
+# #truncate() method
+# with open('file 2.txt', 'w') as f:
+#     f.write("Hello, this is a test file for truncate method.")
+#     f.truncate(20)  # Truncating the file to 20 bytes
+# 
+# with open('file 2.txt', 'r') as f:
+#     print(f.read())  # Reading the truncated file content
+
+# # ~Lambda Function~
+# def double(x):     # Regular function to double a number
+#     return x * 2
+# print(double(5))  # Output: 10
+# # OR
+# double = lambda x: x * 2        # Lambda function to double a number
+# print(double(5))  # Output: 10
+# 
+# cube = lambda x: x * x * x      # Lambda function to calculate cube
+# print(cube(5))  # Output: 125
+# 
+# avg = lambda x, y, z: (x + y + z) / 3   # Lambda function to calculate average
+# print(avg(4, 6, 8))  # Output: 6.0
+# 
+# def appl(fx, value):        # Function that applies a lambda function
+#     return 6 + fx(value)
+# print(appl(lambda x: x * x, 2))  # Output: 10
+
+# ~~
