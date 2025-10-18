@@ -946,14 +946,18 @@
 # # print(y) # This will raise an error since y is a local variable and not accessible outside the function
 
 # ~File IO~
-f = open('myfile.txt', 'r')
-# print(f)
-text = f.read()
-print(text)
-f.close()
 
-# OR
+# gi# Reading a File
+# f = open('myfile.txt', 'r')
+# # print(f)
+# text = f.read()
+# print(text)
+# f.close()
 
-with open('myfile.txt', 'r') as f:  # Using 'with' statement to automatically close the file
-    text = f.read()  # Reading the entire file content
-    print(text)  # Printing the content of the file
+# # Writing a File
+# f = open('myfile.txt', 'w')
+# f.write("Hello, this is a test file.")
+# f.close()   # Closing the file after writing
+
+# with open('myfile.txt','a') as f:
+#     f.write("\nThis line is appended to the file.")
