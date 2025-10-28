@@ -343,31 +343,31 @@
 #  ~Function Arguments~
 # def average(a, b):
 #     print("The Average is: ", (a+b)/2)
-#    
+   
 # average(4,6)   # Calling the function with two arguments
 # average(10,20)
 # #OR
 # def average(a=9, b=1):
 #     print("The Average is: ", (a+b)/2)
-# 
+
 # average(a = 4) # Default value for b will be used
 # average(b = 6) 
 # #OR
 # def average(a, b, c=2):
 #     print("The Average is: ", (a+b+c)/2)
-# 
+
 # average(4, 6)  # Default value for c will be used
 # average(10, 20, 30)  # All three arguments are provided
-# 
+
 # def average(*number):
 #     sum = 0
 #     for i in number:
 #         sum = sum + i
 #         print("Average is: ", sum/len(number))
-            #   
+              
 # average(4, 6, 8, 10)  # Variable-length argument list
 # average(10, 20, 30, 40, 50)
-# 
+
 # def average(*number):
 #     sum = 0
 #     for i in number:
@@ -375,17 +375,17 @@
 #     return sum/len(number)
 # c = average(4, 6, 8, 10)  # Variable-length argument list
 # print("Average is: ", c)
-# 
+
 # def name(fname, mname = "Kumar", lname = "Singh"):
 #     print("Hello,", fname, mname, lname)
-# 
+
 # name("Arun", "Kumar", "Jain") 
 # name("Tarun")
 # name("Ravi", "Gupta")
-# 
+
 # def name(**name):
 #     print("Hello, ", name["fnmae"], name["mname"], name["lname"])
-# 
+
 # name(mname = "Kumar", lname = "Singh", fnmae = "Arun")
 
 # ~List~
@@ -397,32 +397,32 @@
 # print(marks[2])
 # print(marks[3])
 # print(marks[4])
-# 
+
 # print(marks[-3]) # Accessing elements using negative indexing
 # print(marks[len(marks)-3]) #Conert into Positive indexing equivalent
 # print(marks[5-3]) # Accessing elements using a calculated index
 # print(marks[2]) # Positive indexing
-# 
+
 # if 7 in marks:
 #     print("7 is present in the list")
 # else:
 #     print("7 is not present in the list")
-# 
+
 # if "Arun" in marks:
 #     print("Arun is present in the list")
 # else:
 #     print("Arun is not present in the list")
-# 
+
 # if "run" in "Arun":  # Checking if substring "run" is present in the string "Arun"
 #     print("run is present in Arun")
 # else:
 #     print("run is not present in Arun")
-# 
+
 # if "ran" in "Arun":   #Same thing applies for strings as well !
 #     print("ran is present in Arun")
 # else:
 #     print("ran is not present in Arun")
-# 
+
 # marks = [10, 20, 30, 40, 50, "Arun", "Tarun", "Ravi", "Kumar", "Singh"]
 # print(marks)
 # print(marks[:])  # Printing the entire list
@@ -430,7 +430,7 @@
 # print(marks[1:-1])  # Slicing the list to get elements from index 1 to the second last element
 # print(marks[1:9:3])  # Slicing the list to get elements from index 1 to 9 with a step of 3
 # print(marks[1:3 + 1]) 
-# 
+
 # lst = [ i for i in range(6)]
 # print([lst])
 # lst = [ i*i for i in range(8)]
@@ -442,35 +442,35 @@
 # a = [1, 2, 3, 4]
 # a.append(5)
 # print(a)
-# 
+
 # a = [9, 5, 3, 7, 1, 6, 2, 8, 4]
 # a.sort()  # Sorting the list in ascending order
 # print(a)
-# 
+
 # a.sort(reverse=True)  # Sorting the list in descending order
 # print(a)
-# 
+
 # a.reverse()  # Reversing the order of the list
 # print(a)
-# 
+
 # print(a.index(3))  # Finding the index of the first occurrence of 3
 # print(a)
-# 
+
 # a = [1, 2, 3, 4, 3, 5]
 # print(a.count(3))  # Counting the occurrences of 3 in the list
 # print(a)
-# 
+
 # m = a.copy() #don't recomment in python programming
 # m[0] = 0
 # print(a)
-# 
+
 # a.insert(1 , 58)
 # print(a)
-# 
+
 # m = [900, 1000, 1100]
 # a.extend(m)
 # print(a)
-# 
+
 # m = [900, 1000, 1100]
 # k = a + m
 # a.extend(m)
@@ -479,17 +479,17 @@
 # ~Tuples~
 # tup = (1, 2, 3, 4, 5)
 # print(type(tup), tup) # This is a tuple
-# 
+
 # tup =(1)
 # print(type(tup), tup) # This is not a tuple, it's an integer
-# 
+
 # tup = (1,)
 # print(type(tup), tup) # This is a tuple
-# 
+
 # tup = [1, 2, 3, 4, 5]
 # tup[0] = 10
 # print(type(tup), tup) # This is a list
-# 
+
 # tup = (1, 2, 3, 4, 5, "Arun", "Kumar")
 # print(tup) # Printing the entire tuple
 # print(tup[0]) # Accessing the first element
@@ -497,7 +497,7 @@
 # print(tup[2]) # Accessing the third element 
 # print(tup[-1]) # Accessing the last element using negative indexing
 # print(tup[-3]) # Accessing the third last element using negative indexing
-# 
+
 # if 5 in tup:
 #     print("5 is present in the tuple")
 # tup2 = tup[1:4]
@@ -512,29 +512,29 @@
 # temp[2] = "Canada" # Modifying the element at index 2
 # countries = tuple(temp) # Converting list back to tuple
 # print(countries)
-# 
+
 # countries = ("Paksitan", "China", "Russia", "Nepal")
 # countries2 = ("India", "USA", "UK")
 # SouthEastAsia = countries + countries2 # Concatenating two tuples
 # print(SouthEastAsia)
-# 
+
 # tuple1 = (0, 1, 2, 3, 4, 5, 1, 2, 3, 1, 3, 4, 5)
 # res = tuple1.count(1) # Counting occurrences of 1 in the tuple
 # print("Count of 1 in the tuple:", res)
-# 
+
 # index = tuple1.index(3) # Finding the index of the first occurrence of 3
 # print("Index of first occurrence of 3 in the tuple:", index)
-# 
+
 # res = tuple1.index(3, 4) # Finding the index of 3 starting from index 4
 # print("Index of 3 in the tuple after index 4:", res)
 # # Note: Tuples are immutable, so we cannot add, remove, or modify elements directly in a tuple.
-# 
+
 # res = tuple1.index(3, 6, 10) # Finding the index of 3 between index 6 and 10
 # print("Index of 3 in the tuple between index 6 and 10:", res)
-# 
+
 # res = len(tuple1) # Finding the length of the tuple
 # print("Length of the tuple:", res)
-# 
+
 # res = sorted(tuple1) # Sorting the tuple (returns a list)
 # print("Sorted tuple:", res) 
 
@@ -545,11 +545,11 @@
 # print(letter.format(country, name)) # str.format() way of formatting
 # print(f"Hey my name is {name} and I am from {country}") # f-string way of formattin
 # print(f"We use f-stings like this: Hey my name is {{name}} and I am from {{country}}") # To print curly braces
-# 
+
 # price = 49.099999
 # txt = f"For only {price:.2f} dollars!" # Formatting float to 2 decimal places
 # print(txt)
-# 
+
 # print(type(f"{2*30}")) # f-string can evaluate expressions
 
 # ~Docstrings~
@@ -565,21 +565,21 @@
 #         return 1
 #     else:
 #         return (n * factorial(n - 1))
-#  
+ 
 # print(factorial(5)) # 5 * factorial(4)
 # print(factorial(4)) # 4 * factorial(3)
 # print(factorial(3)) # 3 * factorial(2)
 # print(factorial(2)) # 2 * factorial(1)
-# 
+
 # print(factorial(1)) # Base case returns 1
 # print(factorial(0)) # Base case returns 1
-#  
+ 
 # # Quick Quiz : Write a program to print the Fibonacci series using recursion. 
 # # f(0) = 0
 # # f(1) = 1
 # # f(2) = f(1) + f(0)
 # # f(n) = f(n-1) + f(n-2)
-#  
+ 
 # def fibonacci(n):
 #     if n <= 0:
 #         return 0
@@ -587,7 +587,7 @@
 #         return 1
 #     else:
 #         return fibonacci(n - 1) + fibonacci(n - 2)
-# 
+
 # print(fibonacci(6)) # 8 is f(5) + f(4) => 5 + 3
 # print(fibonacci(7)) # 13 is f(6) + f(5) => 8 + 5
 # print(fibonacci(8)) # 21 is f(7) + f(6) => 13 + 8
@@ -597,16 +597,16 @@
 # ~Set~
 # s = {1, 2, 3, 4, 5, 2, 4, 1}
 # print(s) # Sets automatically remove duplicates
-# 
+
 # info = {"Carla", 22, "Engineer", 22, "Carla", 5.6}
 # print(info) # Sets can contain mixed data types and remove duplicates
-# 
+
 # a = {}
 # print(type(a)) # This is a dictionary, not a set
-# 
+
 # a = set()
 # print(type(a)) # This is an empty set
-# 
+
 # for value in info:
 #     print(value) # Iterating through the set
 
@@ -621,34 +621,34 @@
 # print(s1.isdisjoint(s2)) # Checks if s1 and s2 have no elements in common
 # print(s1.issubset(s2)) # Checks if s1 is a subset of s2
 # print(s1.issuperset(s2)) # Checks if s1 is a superset of s2
-# 
+
 # # s1.update(s2) # Updating s1 with elements from s2
 # # print(s1)
-# 
+
 # # s1.add(6) # Adding an element to the set    
 # # print(s1)
-# 
+
 # # s1.remove(3) # Removing an element from the set (raises error if not found
 # # print(s1)
-# 
+
 # # s1.discard(10) # Removing an element from the set (does not raise error if not found)
 # # print(s1)
-# 
+
 # # s1.pop() # Removing and returning an arbitrary element from the set
 # # print(s1)
-# 
+
 # # s1.clear() # Removing all elements from the set
 # # print(s1)
-# 
+
 # # del s1 # Deleting the set
 # # print(s1) # This will raise an error since s1 is deleted
-# 
+
 # info ={"Arun", 22, "Engineer", 5.6}
 # if "Arun" in info:
 #     print("Arun is present in the set")
 # else:
 #     print("Arun is not present in the set")
-# 
+
 # info.add("Kumar")
 # print(info)
 
@@ -656,7 +656,7 @@
 # dic = {"Arun": "Human Being",
 #        "Spoon": "Object"}
 # print(dic["Arun"]) # Accessing value using key
-# 
+
 # dic = {
 #     101: "Arun",
 #     102: "Amqn",
@@ -664,10 +664,10 @@
 #     104: "Ravi",
 #     105: "Tarun"
 # }
-# 
+
 # print(dic[101]) # Accessing value using key 
 # print(dic[103]) # Accessing value using key
-# 
+
 # info ={'name': "Arun Kumar",
 #        'age': 22, 
 #        'eligible': True,}
@@ -675,38 +675,38 @@
 # print(info['name']) # Accessing value using key
 # print(info.get('name2')) # Using get() method to access value (returns None if key not found)
 # print(info.keys()) # Getting all keys
-# 
+
 # for key in info.keys(): # Iterating through keys
 #     print(info[key])
-# 
+
 # for key in info.keys(): 
 #     print(f"The value corresponding to the key {key} is {info[key]}")
-# 
+
 # print(info.items())
 # for key, value in info.items(): # Iterating through key-value pairs
 #     print(f"The value corresponding to the key {key} is {value}")
-# 
+
 # print(info.values()) # Getting all values
 
 # ~Dictionary Methods~
 # ep1 = {122: 45, 123: 67, 124: 89, 125: 90}
 # ep2 = {126: 56, 127: 78, 128: 90}
-# 
+
 # ep1.update(ep2) # Merging two dictionaries
 # print(ep1)
-# 
+
 # ep1.clear() # Clearing all items in the dictionary
 # print(ep1)
-# 
+
 # ep1.pop(123) # Removing item with key 123
 # print(ep1)
-# 
+
 # ep1.popitem() # Removing and returning an arbitrary item
 # print(ep1)
-# 
+
 # del ep1
 # print(ep1) # This will raise an error since ep1 is deleted
-# 
+
 # del ep1[122] # Deleting item with key 122
 # print(ep1)
 
@@ -715,19 +715,19 @@
 #     print(i)
 # else:
 #     print("Sorry no i")
-# 
+
 # for i in []: # Empty list, loop will not run
 #     print(i)
 # else:
 #     print("Sorry no i") 
-# 
+
 # for i in range(6): #` Loop will run from 0 to 5
 #     print(i)
 #     if i == 4:
 #         break
 # else:
 #     print("Sorry no i") 
-# 
+
 # i = 0        # Infinite loop
 # while i<7:
 #     print(i)
@@ -736,7 +736,7 @@
 #         break
 # else:
 #     print("Sorry no i")
-# 
+
 # for x in range(5):
 #     print("interation no {} in for loop".format(x+1))
 # else:
@@ -751,10 +751,10 @@
 #         print(f"{int(a)} X {i} = {int(a)*i}")
 # except:                                     # Except block to handle exceptions
 #     print("Invalid Input! Please enter a valid number.")
-# 
+
 # print("Thanks for using the program!")
 # print("End of the program")
-# 
+
 # try:
 #     num = int(input("Enter a number: "))
 #     a = [6,3]                                   # List with two elements
@@ -773,16 +773,16 @@
 #     except:     # Catching any exception
 #         print("An error occurred.")
 #         return 0
-# 
+
 #     finally: # Finally block will always execute    # regardless of whether an exception occurred or not
 #         print("Execution of func1 is complete.")
-# 
+
 # x = func1()     
 # print(x)
 
 # ~Raising Custom Error~
 # a = int(input("Enter any vale between 5 and 9 : ")) # Taking input from user
-# 
+
 # if a<5 and a>9: # Checking if the value is not between 5 and 9
 #     raise ValueError("The value is not between 5 and 9") # Raising a ValueError with a custom message
 
@@ -806,27 +806,27 @@
 #     ["Which is the smallest continent?", "Africa", "Australia", "Europe", "Antarctica", 2],
 #     ["What is the national currency of India?", "Dollar", "Yen", "Rupee", "Pound", 3],
 # ]
-# 
+
 # levels = [1000, 2000, 3000, 5000, 10000, 20000, 40000, 80000, 
 #           160000, 320000, 640000, 1250000, 2500000, 5000000, 10000000]
-# 
+
 # safe_money = 0
-# 
+
 # for i in range(len(questions)):
 #     question = questions[i]
 #     print(f"\nYour question for Rs.{levels[i]} is:")
 #     print(question[0])  # print the question text
 #     print(f"a. {question[1]} \nb. {question[2]} \nc. {question[3]} \nd. {question[4]}")
-# 
+
 #     try:
 #         reply = int(input("Enter your answer (1/2/3/4): "))
 #     except ValueError:
 #         print("Invalid input! Game over.")
 #         break
-# 
+
 #     if reply == question[-1]:
 #         print(f"✅ Correct answer! You have won Rs.{levels[i]}")
-# 
+
 #         if i == 4:
 #             safe_money = 10000
 #             print("🎉 Congratulations! You have reached the safe level of Rs. 10,000")
@@ -846,22 +846,22 @@
 # a = 330
 # b = 3303
 # print("A") if a > b else print("=") if a == b else print("B") # Short hand if else
-# 
+
 # c = 9 if a > b else 0 # Short hand if else to assign value to c
 # print(c)
 
 # ~Enumerate Function~
 # marks = [12, 15, 20, 1, 80, 70, 30, 25]
-# 
+
 # # index = 0             # Initializing index
 # # for mark in marks:    # Iterating through the list
 # #     print(mark)
 # #     if(index==4):
 # #         print("awesome")
 # #     index += 1        # Incrementing index
-# 
+
 # OR
-# 
+
 # for index, mark in enumerate(marks):  # Using enumerate to get index and value  
 # print(mark)    
 # if(index==4):                     # Checking if index is 4
@@ -875,9 +875,9 @@
 # import math as math_builtin_puthon  # imports math module and renames it to math_builtin_python
 # result = math_builtin_python.sqrt(9) * math_builtin_python.pi
 # print(result) # Output: 3.0
-# 
-#OR
-# 
+
+# OR
+
 # import math
 # print(dir(math)) # Lists all functions and constants in the math module
 # print(math.nan, type(math.nan))
@@ -888,34 +888,34 @@
 
 # # ~OS module~
 # import os  # Importing the os module to interact with the operating system
-# 
+
 # if (not os.path.exists("data")): # Checking if the "data" directory does not exist
 #     os.mkdir("data") # Creating the "data" directory
-#  
+ 
 # for i in range (0, 100): # Looping from 0 to 99
 #     os.mkdir(f"data/Day{i+1}") # Creating subdirectories Day1, Day2, ..., Day100 inside the "data" directory
-# 
+
 # #OR
-# 
+
 # import os  # Importing the os module to interact with the operating system
-#  
+ 
 # for i in range (0, 100): # Looping from 0 to 99
 #     os.rename(f"data/Day{i+1}", f"data/Tutprial {i+1}")  # Renaming subdirectories Day1, Day2, ..., Day100 to Tutorial 1, Tutorial 2, ..., Tutorial 100
-# 
+
 # #OR
-# 
+
 # import os
 # folders = os.listdir("data") # Listing all items in the "data" directory
 # print(folders) # Printing the list of items in the "data" directory
-# 
+
 # for folder in folders: # Iterating through each item in the list
 #     print(folder) # Printing the name of each item
 #     print(os.listdir(f"data/{folder}")) # Listing contents of each subdirectory
-# 
+
 # #OR
-# 
+
 # print(os.getcwd()) # Printing the current working directory
-# 
+
 # os.chdir("/Users") # Changing the current working directory to "/Users"
 # print(os.getcwd()) # Printing the new current working directory
 
@@ -926,21 +926,21 @@
 #     x = 5
 #     print(f"The Local x is {x}") # Local variable x
 #     print("Hello Arun")
-# 
+
 # print(f"The Global x is {x}") # Global variable x
 # hello() # Calling the function
 # x = 5
 # print(f"The Global X is {x}")
-# 
+
 # # OR
-# 
+
 # x = 10
 # def my_function(): # Function definition
 #     global x # Declaring x as a global variable
 #     x = 4 # Modifying the global variable x
 #     y = 5 # Local variable y
 #     print(y)
-# 
+
 # my_function() # Calling the function
 # print(x)
 # # print(y) # This will raise an error since y is a local variable and not accessible outside the function
@@ -952,12 +952,12 @@
 # text = f.read()
 # print(text)
 # f.close()
-# 
+
 # # Writing a File
 # f = open('myfile 1.txt', 'w')
 # f.write("Hello, this is a test file.")
 # f.close()   # Closing the file after writing
-# 
+
 # with open('myfile 1.txt','a') as f:
 #     f.write("\nThis line is appended to the file.")
 
@@ -977,9 +977,9 @@
 #     print(f"marks of student {i} is English is: {m2}")
 #     print(f"marks of student {i} is Science is: {m3}")
 #     print(line)
-# 
+
 # # and
-# 
+
 # f = open('myfile 2.txt', 'r')
 # i = 0
 # while True:
@@ -994,7 +994,7 @@
 #     print(f"marks of student {i} is English is: {m2*2}")
 #     print(f"marks of student {i} is Science is: {m3*2}")
 #     print(line)
-# 
+
 # # WRITELINE METHOD
 # f = open('myfile 3.txt', 'w')   # Opening file in write mode
 # lines = ["This is line 1\n", "This is line 2\n", "This is line 3\n"]
@@ -1011,12 +1011,12 @@
 #     print( f.tell())        # Printing the current position of the cursor   
 #     data = f.read(5)
 #     print(data)             # Printing the read data
-# 
+
 # #truncate() method
 # with open('file 2.txt', 'w') as f:
 #     f.write("Hello, this is a test file for truncate method.")
 #     f.truncate(20)  # Truncating the file to 20 bytes
-# 
+
 # with open('file 2.txt', 'r') as f:
 #     print(f.read())  # Reading the truncated file content
 
@@ -1027,13 +1027,13 @@
 # # OR
 # double = lambda x: x * 2        # Lambda function to double a number
 # print(double(5))  # Output: 10
-# 
+
 # cube = lambda x: x * x * x      # Lambda function to calculate cube
 # print(cube(5))  # Output: 125
-# 
+
 # avg = lambda x, y, z: (x + y + z) / 3   # Lambda function to calculate average
 # print(avg(4, 6, 8))  # Output: 6.0
-# 
+
 # def appl(fx, value):        # Function that applies a lambda function
 #     return 6 + fx(value)
 # print(appl(lambda x: x * x, 2))  # Output: 10
@@ -1043,92 +1043,92 @@
 # def cube(x):
 #     return x * x * x
 # print(cube(2))
-# 
+
 # l = [1, 2, 3, 4, 5]
 # newl = []
 # for item in l:
 #     newl.append(cube(item))  # Using a for loop to apply cube function to each item in the list
 # print(newl)
-# 
+
 # #OR
-# 
+
 # # Map Function
 # def cube(x):
 #     return x * x * x
 # print(cube(2))
-# 
+
 # l = [1, 2, 3, 4, 5]
 # newl = list(map(cube, l))       # Using map to apply cube function to each item in the list
 # print(newl)
-# 
+
 # # OR
-# 
+
 # l = [1, 2, 3, 4, 5]
 # newl = list(map(lambda x: x * x * x, l))   # Using map with a lambda function to cube each item in the list
 # print(newl)
-# 
+
 # # Filter Function
 # def filter_function(a):         # Function to filter items greater than 2
 #     return a>2
-# 
+
 # l = [1, 2, 4, 6, 4, 3]
 # newnewl = list(filter(filter_function, l))  # Using filter to get items greater than 4
 # print(newnewl)
-# 
+
 # # Reduce Function\
 # from functools import reduce    # Importing reduce from functools module
 # numbers = [1, 2, 3, 4, 5]
-# 
+
 # def mysum(x, y):                # Function to sum two numbers
 #     return x + y
-# 
+
 # sum = reduce(mysum, numbers)    # Using reduce to sum all numbers in the list
 # print(sum)
 
 # # ~is, vs, ==~
 # a = 4       # Assigning integer value 4 to variable a
 # b = '4'    # Assigning string value '4' to variable b
-# 
+
 # print(a is b) # Checks if a and b refer to the same object in memory
 # print(a == b) # Checks if the values of a and b are equal
-# 
+
 # #OR
-# 
+
 # a = [1, 2, 3]   # Assigning a list to variable a
 # b = [1, 2, 3]   # Two different lists with same content
-# 
+
 # print(a is b) # Checks if a and b refer to the same object in memory
 # print(a == b) # Checks if the values of a and b are equal
-# 
+
 # #OR
-# 
+
 # a = 3       # Assigning integer value 3 to variable a
 # b = 3       # Assigning integer value 3 to variable b
-# 
+
 # print(a is b) # Checks if a and b refer to the same object in memory
 # print(a == b) # Checks if the values of a and b are equal
-# 
+
 # #OR
-# 
+
 # a = "Arun"   # Assigning string value "Arun" to variable a
 # b = "Arun"   # Assigning string value "Arun" to variable b
-# 
+
 # print(a is b) # Checks if a and b refer to the same object in memory
 # print(a == b) # Checks if the values of a and b are equal
-# 
+
 # #OR
-# 
+
 # a = (1, 2, 3)   # Assigning a tuple to variable a
 # b = (1, 2, 3)   # Two different tuples with same content
-# 
+
 # print(a is b) # Checks if a and b refer to the same object in memory
 # print(a == b) # Checks if the values of a and b are equal
-# 
+
 # #AND
-# 
+
 # a = None
 # b = None
-# 
+
 # print(a is b) # Checks if a and b refer to the same object in memory
 # print(a is None) # Checks if a is None
 # print(a == b) # Checks if the values of a and b are equal
@@ -1137,9 +1137,9 @@
 # Sanke Water Gun Game
 # 1.Snake Water and Gun is a variation of the chilfern's game "rock-paper-scissors" where player use hand gesture to represent a snake, water or gun. The gun beats the snake, the water bests the gun, and the snake beats the water.
 # 2.Write a python program to create a sanke water gun game in python using if-else statemnets. Do not create any fancy GUI. Use proper functions to check for win.
-# 
+
 # import random
-# 
+
 # def check_win(user, computer):
 #     """
 #     Determines the winner between user and computer.
@@ -1150,7 +1150,7 @@
 #     """
 #     if user == computer:
 #         return "Draw"
-# 
+
 #     # Define winning conditions for user
 #     if (user == 'snake' and computer == 'water') or \
 #        (user == 'water' and computer == 'gun') or \
@@ -1158,26 +1158,27 @@
 #         return "You Win"
 #     else:
 #         return "Computer Wins"
-# 
+
 # def main():
 #     print("=== Snake Water Gun Game ===")
 #     options = ['snake', 'water', 'gun']
-# 
+
 #     # User choice
 #     user_choice = input("Enter your choice (snake/water/gun): ").strip().lower()
-# 
+
 #     if user_choice not in options:
 #         print("Invalid choice! Please choose snake, water, or gun.")
 #         return
-# 
+
 #     # Computer random choice
 #     computer_choice = random.choice(options)
 #     print(f"Computer chose: {computer_choice}")
-# 
+
 #    # Decide result
 #     result = check_win(user_choice, computer_choice)
 #     print(result)
-# 
+
 # # Run the game
 # if __name__ == "__main__":
 #     main()
+
