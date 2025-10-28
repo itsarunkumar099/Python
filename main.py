@@ -1085,4 +1085,99 @@
 # sum = reduce(mysum, numbers)    # Using reduce to sum all numbers in the list
 # print(sum)
 
-# ~is, vs, ==~
+# # ~is, vs, ==~
+# a = 4       # Assigning integer value 4 to variable a
+# b = '4'    # Assigning string value '4' to variable b
+# 
+# print(a is b) # Checks if a and b refer to the same object in memory
+# print(a == b) # Checks if the values of a and b are equal
+# 
+# #OR
+# 
+# a = [1, 2, 3]   # Assigning a list to variable a
+# b = [1, 2, 3]   # Two different lists with same content
+# 
+# print(a is b) # Checks if a and b refer to the same object in memory
+# print(a == b) # Checks if the values of a and b are equal
+# 
+# #OR
+# 
+# a = 3       # Assigning integer value 3 to variable a
+# b = 3       # Assigning integer value 3 to variable b
+# 
+# print(a is b) # Checks if a and b refer to the same object in memory
+# print(a == b) # Checks if the values of a and b are equal
+# 
+# #OR
+# 
+# a = "Arun"   # Assigning string value "Arun" to variable a
+# b = "Arun"   # Assigning string value "Arun" to variable b
+# 
+# print(a is b) # Checks if a and b refer to the same object in memory
+# print(a == b) # Checks if the values of a and b are equal
+# 
+# #OR
+# 
+# a = (1, 2, 3)   # Assigning a tuple to variable a
+# b = (1, 2, 3)   # Two different tuples with same content
+# 
+# print(a is b) # Checks if a and b refer to the same object in memory
+# print(a == b) # Checks if the values of a and b are equal
+# 
+# #AND
+# 
+# a = None
+# b = None
+# 
+# print(a is b) # Checks if a and b refer to the same object in memory
+# print(a is None) # Checks if a is None
+# print(a == b) # Checks if the values of a and b are equal
+
+# EXERCISE 5
+# Sanke Water Gun Game
+# 1.Snake Water and Gun is a variation of the chilfern's game "rock-paper-scissors" where player use hand gesture to represent a snake, water or gun. The gun beats the snake, the water bests the gun, and the snake beats the water.
+# 2.Write a python program to create a sanke water gun game in python using if-else statemnets. Do not create any fancy GUI. Use proper functions to check for win.
+# 
+# import random
+# 
+# def check_win(user, computer):
+#     """
+#     Determines the winner between user and computer.
+#     Rules:
+#     - Snake drinks water → Snake wins
+#     - Water douses gun → Water wins
+#     - Gun shoots snake → Gun wins
+#     """
+#     if user == computer:
+#         return "Draw"
+# 
+#     # Define winning conditions for user
+#     if (user == 'snake' and computer == 'water') or \
+#        (user == 'water' and computer == 'gun') or \
+#        (user == 'gun' and computer == 'snake'):
+#         return "You Win"
+#     else:
+#         return "Computer Wins"
+# 
+# def main():
+#     print("=== Snake Water Gun Game ===")
+#     options = ['snake', 'water', 'gun']
+# 
+#     # User choice
+#     user_choice = input("Enter your choice (snake/water/gun): ").strip().lower()
+# 
+#     if user_choice not in options:
+#         print("Invalid choice! Please choose snake, water, or gun.")
+#         return
+# 
+#     # Computer random choice
+#     computer_choice = random.choice(options)
+#     print(f"Computer chose: {computer_choice}")
+# 
+#    # Decide result
+#     result = check_win(user_choice, computer_choice)
+#     print(result)
+# 
+# # Run the game
+# if __name__ == "__main__":
+#     main()
