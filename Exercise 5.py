@@ -2,7 +2,7 @@
 # Sanke Water Gun Game
 # 1.Snake Water and Gun is a variation of the chilfern's game "rock-paper-scissors" where player use hand gesture to represent a snake, water or gun. The gun beats the snake, the water bests the gun, and the snake beats the water.
 # 2.Write a python program to create a sanke water gun game in python using if-else statemnets. Do not create any fancy GUI. Use proper functions to check for win.
-
+#
 # 3.Sample Input and Output
 #                   S W G                            
 #   Computer =      0 1 2
